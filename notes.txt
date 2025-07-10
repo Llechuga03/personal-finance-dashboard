@@ -1,0 +1,24 @@
+Started doing work on the backend to start; using FastAPI.
+
+Step 1:
+    - The .env file defines the connection string
+    - The config.py file in the backend folder reads our .env file securely into Python
+    - session.py uses the .env file information to establish a connection with the database
+    - SessionLocal() in sessions.py will be used later inisde the API routes to read/write 
+      to the database.
+Step 2:
+    - Now shifting focus to defining the database models.
+    - We'll have tables for users, categories, and transactions
+    - Tables are set up; relationships allow easy access to a user's related records
+    - the cascade="all, delete" field ensures that when a user is deleted, their
+      related data is deleted as well
+Step 3: 
+    - Now focusing on the schema equivalents for data validation and serialization.
+    - defining pydantic schemas for validation and shaping request/response data in the API.
+    - The schemas will be used by FastAPI to validate incoming JSON (POST) and serialize outgoing data
+      (GET).
+    - This keeps the backend and frontend data formats consistent.
+Step 4:
+    - Building the API endpoints so I can start creating and fetching users, categories, and transactions.
+    - All of this work is done in the routes.py file and it will later be split into organized routers once everything works.
+    

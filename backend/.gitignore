@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment
+venv/
+.env
+*.env
+
+# SQLite DB (local/test only)
+*.db
+
+# Pytest cache
+.pytest_cache/
+.cache/
+
+# VSCode / IDE settings (optional)
+.vscode/
+.idea/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Bytecode compiled by pytest
+*.pyc
+
+# Migrations (if added later)
+migrations/
